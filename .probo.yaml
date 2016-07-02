@@ -2,7 +2,7 @@ assets:
   - dev.sql.gz
 steps:
   - name: Composer install
-    command: 'cd /var/www/html; composer self-update; composer install --prefer-dist'
+    command: 'pwd; ls -al; cd /var/www/html; composer self-update; composer install --prefer-dist'
   - name: Probo CI site setup
     plugin: Drupal
     database: dev.sql.gz
