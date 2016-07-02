@@ -1,6 +1,10 @@
 assets:
   - dev.sql.gz
 steps:
+  - name: List src
+    command: 'ls -al /src/'
+  - name: List var
+    command: 'ls -al /var/'
   - name: Composer install
     command: 'pwd; ls /var/html -al; cd /var/www/html; composer self-update; composer install --prefer-dist'
   - name: Probo CI site setup
