@@ -9,3 +9,5 @@ steps:
     databaseGzipped: true
     subDirectory: web
     drupalVersion: 8
+  - name: Configuration Import
+    command: 'drush cim -y; drush cr;'
