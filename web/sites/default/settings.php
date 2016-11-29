@@ -733,6 +733,7 @@ $settings['trusted_host_patterns'] = [
   '^.+\.dev',
   '^.+\.local$',
   '^.+\.sandbox$',
+  '^.+\.build$',
   '^localhost$',
 ];
 
